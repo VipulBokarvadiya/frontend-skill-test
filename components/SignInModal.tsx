@@ -5,7 +5,7 @@ const SignInModal = ({ onClose }) => {
   const [errors, setErrors] = useState({});
 
   const validate = () => {
-    const newErrors = {};
+    const newErrors: any = {};
     if (!form.email) {
       newErrors.email = 'Email is required';
     } else if (!/\S+@\S+\.\S+/.test(form.email)) {
